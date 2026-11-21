@@ -1,27 +1,29 @@
-# The World in One Image: Friday 20 November 2026
+# news-image-20261120 — The World in One Image
 
-One image that sums up the world news of Friday 20 November 2026, drawn as a newspaper front page. An entry for the make.fun **news-image-20261120** bounty.
+A newspaper front page for Friday 20 November 2026, drawn as a single 1024x1024 image. Built for the make.fun news-image-20261120 bounty, paid in USDC.
 
-[![make.fun · news-image-20261120](https://make.fun/badge/news-image-20261120.svg)](https://make.fun/bounty/news-image-20261120?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
+[![news-image-20261120](https://make.fun/badge/news-image-20261120.svg)](https://make.fun/bounty/news-image-20261120?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
 [![rank](https://make.fun/badge/news-image-20261120/Whydiriki700/news-image-20261120/rank.svg)](https://make.fun/bounty/news-image-20261120/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
 [![reward](https://make.fun/badge/news-image-20261120/Whydiriki700/news-image-20261120/reward.svg)](https://make.fun/bounty/news-image-20261120?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
 
-## Status: final poster submitted
+## What is on the page
 
-The final poster is in: lead story is Friday's Wall Street rout (S&amp;P 500 down 3.7%, Nasdaq down 5.2%, worst week since April 2025), with six panels (ICJ genocide ruling on Myanmar, the Shenzhen summit, the Houthi strike on Riyadh, the overnight attack on Kyiv, Anthropic's slide after its record IPO, the burning tanker in the Strait of Hormuz) and a two-row strip of the day's other news. Submitted before the deadline of 22 November 2026 00:00 UTC (07:00 WIB).
+Lead: Wall Street sinks as the AI sell-off wipes out the year's gains (S&P 500 -3.7%, Nasdaq -5.2%, the worst week since April 2025), with a falling-market chart beside it. Six panels below: the World Court ruling that Myanmar committed genocide, the Trump-Xi-Putin peace declaration in Shenzhen, the Houthi missile that damaged Riyadh's PIF tower, Russia's overnight missile attack on Kyiv, Anthropic sliding a day after its record IPO, and a tanker burning in the Strait of Hormuz. A two-row strip carries the rest of the day: COP31, Ebola, Cyclone Akvan, Gaza, the Meta fine, the FAA ground stop, and more.
 
-## How it is made
+## How it was built
 
-The page is composed programmatically (HTML and SVG with real type, rendered to a 1024 by 1024 PNG), so every headline stays crisp and legible. `main.ts` is the entry program: it copies `entry.png` to the output directory. The image is a whole PNG of at most 1 MiB and 1024 by 1024 pixels.
+The page is typeset in HTML with real text and rendered to PNG, so every headline stays sharp at small sizes. `main.ts` is the entrypoint: it checks `entry.png` is a genuine PNG inside the 1024x1024 and 1 MiB limits and copies it byte for byte to `/output/entry.png`.
+
+Run it locally:
 
 ```
-mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
+MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
-## Entered in
+## The bounty
 
-[news-image-20261120 on make.fun](https://make.fun/bounty/news-image-20261120), a coding bounty paid in USDC on Solana. New to make.fun? [Join with our referral link](https://make.fun/r/vwpycztt).
+[news-image-20261120 on make.fun](https://make.fun/bounty/news-image-20261120) — real bounties, real USDC. New here? Join through https://make.fun/r/vwpycztt
 
 ## License
 
-See `LICENSE`.
+MIT — see `LICENSE`.
