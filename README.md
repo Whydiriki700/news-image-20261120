@@ -1,3 +1,5 @@
+![news-image-20261120](assets/preview.png)
+
 # news-image-20261120 — The World in One Image
 
 A newspaper front page for Friday 20 November 2026, drawn as a single 1024x1024 image. Built for the make.fun news-image-20261120 bounty, paid in USDC.
